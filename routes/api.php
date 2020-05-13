@@ -23,7 +23,7 @@ Route::group(['middleware' => 'auth:api'], function (){
     // Route::post('/create-kms','API\KmsController@create');
     Route::post('/createkms','KmsController@create');
     Route::get('/datakms','KmsController@index');
-    Route::delete('/delete-kms/{id}','KmsController@delete');
+    Route::delete('/delete/{id}','KmsController@delete');
     Route::post('/update-kms/{id}','KmsController@update');
 });
 
